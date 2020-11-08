@@ -70,7 +70,7 @@ class BackupDbJob {
     
     public function dumpDB(){
         try {
-            $dsn = 'mysql:host=' . $this->dbHost . ';dbname=' . $this->dbName;
+            $dsn = 'mysqli:host=' . $this->dbHost . ';dbname=' . $this->dbName;
             $this->lastSeedName = $this->getSeedName();
 
             //Create mysql dump obj
